@@ -5,7 +5,7 @@ using UnityEngine;
 public class CannonBehavior : MonoBehaviour
 {
     public Transform cannonBarrel;
-    public GameObject gem;
+    public GameObject gemPrefab;
     public float reloadDelay = 1.0f;
 
     private bool canShoot = true;
@@ -46,14 +46,14 @@ public class CannonBehavior : MonoBehaviour
             canShoot = false;
             currentDelay = reloadDelay;
 
-            //GameObject bullet = bulletPool.CreateObject();
+            GameObject gem = Instantiate(gemPrefab);
             gem.transform.position = cannonBarrel.position;
             gem.transform.localRotation = cannonBarrel.rotation;
-            //bullet.GetComponent<BulletBehavior>().Initialize();
+            gem.GetComponent<GemBehavior>().Initialize();
 
             foreach (var collider in tankColliders)
             {
-                Physics2D.IgnoreCollision(this.gem.GetComponent<Collider2D>(), collider);
+                Physics2D.IgnoreCollision(this.gemPrefab.GetComponent<Collider2D>(), collider);
             }
         }
     }
