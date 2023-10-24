@@ -13,7 +13,7 @@ public class CannonAim : MonoBehaviour
         var cannonDirection = (Vector3)pointerPosition - transform.position;
         cannonDirection.z = 0;
         angle = Mathf.Atan2(cannonDirection.y, cannonDirection.x) * Mathf.Rad2Deg - 90.0f;
-        angle = Mathf.Clamp(angle, -75, 75);
+        angle = Mathf.Clamp(angle, -150, -30);
         float cannonRotate = cannonRotationSpeed * Time.fixedDeltaTime;
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.Euler(0, 0, angle), cannonRotate);
     }
