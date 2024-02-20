@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 3989193662432425582}
   - component: {fileID: 3412972509300236282}
   m_Layer: 0
-  m_Name: Static Gem
-  m_TagString: Untagged
+  m_Name: Gem Blue
+  m_TagString: Blue Gem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 260279380, guid: f05c6126c1326f847bf8380530ee8824, type: 3}
+  m_Sprite: {fileID: -406670606, guid: f05c6126c1326f847bf8380530ee8824, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -128,7 +128,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3989193662432425580}
-  m_BodyType: 2
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0

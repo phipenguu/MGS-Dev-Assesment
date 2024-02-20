@@ -11,11 +11,9 @@ GameObject:
   - component: {fileID: 3989193662432425581}
   - component: {fileID: 3989193662432425568}
   - component: {fileID: 3989193662432425583}
-  - component: {fileID: 3989193662432425582}
-  - component: {fileID: 3412972509300236282}
   m_Layer: 0
-  m_Name: Gem
-  m_TagString: Untagged
+  m_Name: Static Gem Blue
+  m_TagString: Blue Gem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 260279380, guid: f05c6126c1326f847bf8380530ee8824, type: 3}
+  m_Sprite: {fileID: -406670606, guid: f05c6126c1326f847bf8380530ee8824, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -120,37 +118,3 @@ PolygonCollider2D:
       - {x: 0.5, y: -0.16}
       - {x: 0.5, y: 0.16}
       - {x: 0.16, y: 0.5}
---- !u!50 &3989193662432425582
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3989193662432425580}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: 242888a92bc9337489500aba12f7a85a, type: 2}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!114 &3412972509300236282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3989193662432425580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c6c28ef56fd5794f893312b05c48e7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 50

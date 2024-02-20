@@ -29,16 +29,12 @@ public class GemBehavior : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collided with " + collision.name);
+        Debug.Log("Collided with " + collision.collider.name);
 
-        //var damagable = collision.GetComponent<Damageable>();
-        //if (damagable != null)
-        //{
-        //    damagable.Hit();
-        //}
+        
 
-        DisableObject();
+        //DisableObject();
     }
 }
